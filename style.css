@@ -1,0 +1,224 @@
+.main-container {
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: blur-out-contract 0.4s linear both;
+}
+
+
+header {
+    padding-top: .6em;
+    line-height: 10px;
+    text-align: center;
+    color: #666666;
+}
+
+.profile-container {
+    width: 50vw;
+    height: 70vh;
+    background: #e5e5e5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 18px;
+    box-shadow: 20px 20px 60px #bebebe,
+        -20px -20px 60px #ffffff;
+    
+            
+    
+}
+
+#img {
+    width: 9em;
+    height: 9em;
+    border-radius: 100%;
+    position: absolute;
+    margin-bottom: 10px;
+    right: 8px;
+    top: 4px;
+    object-fit: cover;
+    
+}
+
+#profile-img {
+    background: #8ecae6;
+    width: 9em;
+    height: 9em;
+    border-radius: 100%;
+    position: relative;
+    
+}
+
+.title-text {
+    line-height: 3px;
+    color: #666666;
+}
+
+.title-description  {
+    padding: .6em;
+    color: #666666;
+}
+
+
+
+button {
+    color: #666666;
+    width: 8.5em;
+    height: 3em;
+    border: 4px solid #8ecae6;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px 0px
+                -29px -29px 59px white;
+}
+
+#home-btn {
+    text-decoration: none;
+    color: #666666;
+}
+
+#image-icon {
+    background: #8ecae6;
+    color: #ffff;
+    width: 15px;
+    height:20px;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 15px;
+    left: -15px;
+    padding-top: 2px;
+}
+
+.fa-solid {
+    color: #8ecae6;
+    font-size: 2rem;
+    padding: 15px;
+}
+
+#title {
+    text-transform: uppercase;
+    color: #8ecae6;
+}
+
+#line {
+    background: #8ecae6;
+    display: inline-block;
+    width: 100px;
+    height: 5px;
+    margin-top: -30px;
+}
+
+.fa-solid:active {
+    color: #8ecae665;
+}
+
+
+/* styling for review form section */
+.info-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10em;
+    background: url(./vector-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+    box-shadow: 29px 29px 59px #acacac,
+        -29px -29px 59px #ffffff;
+    animation: blur-out-contract 0.4s linear both;
+
+}
+
+.text-info {
+    width: 45%;
+    height: 40vh;
+    padding: 1em;
+    color: #666666;
+}
+
+.fill-info {
+    width: 40%;
+}
+
+.fill-info form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-field {
+    width: 70%;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    background: azure;
+    margin-top: .5em;
+    text-align: center;
+
+
+}
+
+#img-file {
+    width: 70%;
+    border-radius: 0px 10px 10px 0px;
+    background: azure;
+    margin-top: .3em;
+
+}
+
+input {
+    outline: none;
+}
+
+.input-field:focus {
+    outline: 3px solid #8ecae6;
+    font-size: 1.3em;
+}
+
+#submit-btn {
+    width: 40%;
+    margin-left: 4em;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    background: azure;
+    margin-top: .5em;
+    text-align: center;
+}
+#submit-btn:hover {
+    outline: 3px solid #8ecae6;
+    background: whitesmoke;
+    color: grey;
+}
+
+#submit-link {
+    text-decoration: none;
+    color: black;
+}
+.head-text {
+    font-size: 2rem;
+}
+
+#form-container {
+    margin: 1.5em;
+}
+
+
+@keyframes blur-out-contract {
+    0% {
+        transform: scale(0);
+        filter: blur(12px);
+    }
+
+    100% {
+        transform: scale(1);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
